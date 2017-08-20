@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mininet:
+    build: .
+    privileged: true
+  onos:
+    image: milardo/sdn-wise-onos
+  cooja:
+    image: milardo/sdn-wise-contiki
+    tty: true
+    network_mode: "bridge"
+    environment:
+     - DISPLAY=localhost:0
+    volumes:
+     - /tmp/.X11-unix:/tmp/.X11-unix
+     - /lib/modules:/lib/modules
