@@ -46,7 +46,7 @@ RUN apt-get update \
     patch \
     curl \
     zip \
-    ping \
+    iputils-ping \
 
 # Mininet
 

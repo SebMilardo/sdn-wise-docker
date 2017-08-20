@@ -12,7 +12,7 @@ It is important to run this container in Privileged mode (`--privileged`) so tha
 
 ## Docker Run Command
 
-on Mac OSX
+on Mac OSX:
 
 ```
 $ open -a XQuartz
@@ -29,7 +29,7 @@ $ docker run -it --rm --privileged -e DISPLAY=$ip:0 \
              milardo/sdn-wise-docker
 ```
 
-on Linux
+on Linux:
 
 ```
 $ docker run -it --rm --privileged -e DISPLAY \
